@@ -1,5 +1,5 @@
 from sys import path
-path.append("..\\Samples")
+#path.append("..\\Samples")
 import Samples.myFunctions as my
 
 val = my.readint("Enter a number from -10 to 10: ", -10, +10)

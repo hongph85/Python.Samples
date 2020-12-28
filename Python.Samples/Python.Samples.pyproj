@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0b9c3978-fff1-4f34-840a-686bd044c120</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tests\test_myFunctions.py</StartupFile>
+    <StartupFile>module1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,24 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="runPyGame.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MROException.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\classInheritance.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\myClasses.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="stringTest.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Samples\myFunctions.py">
       <SubType>Code</SubType>
     </Compile>
@@ -29,7 +47,13 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="setup.py" />
-    <Compile Include="tests\testReadInt.py">
+    <Compile Include="helloWorld.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="readFile.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="testReadInt.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="tests\test_myFunctions.py">
@@ -39,6 +63,9 @@
   <ItemGroup>
     <Folder Include="Samples\" />
     <Folder Include="tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hongph.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
